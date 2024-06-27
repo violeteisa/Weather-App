@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="images/bookmark.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
+  </head>
+  <body >
+    <!--  beg of header section -->
+    <div class="header ">
+      <div class="container ">
+          <div class="d-flex justify-content-between align-items-center">
+              <a class="text-decoration-none text-white d-flex" href="">
+                <div class="w-50 me-2"><img src="images/logo.png" class="w-100"  alt=""></div>
+                <div class="logo flex-nowrap" >
+                  <h1>Weather</h1>
+                  <p class="description ">tagline goes here</p>
+                </div>
+              </a>
+            <div >
+              <ul class="d-flex m-3 bg-dark">
+                <li class="me-3 active-item "><a href="">Home</a></li>
+                <li class="me-3 nav-item"><a href="">News</a></li>
+                <li class="me-3 nav-item "><a href="">Live Cameras</a></li>
+                <li class="me-3 nav-item "><a href="">Photos</a></li>
+                <li class="me-3 nav-item "><a href="">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+        
+        
+      </div>
+    </div>
+        <!--  end of header section -->
+          <!--  beg of seacrh input section -->
+      <div class="main-section">
+        <div class="container ">
+          <form class=" find-location">
+            <input type="text" placeholder="Find your location..." id="search">
+            <input type="button" value="Find" id="submit">
+          </form>
+        </div>
+      </div>
+<!--  end of seacrh input section -->
+<!--  beg of forecast table -->
+    <div class="forecast table  pb-3">
+      <div class="container ">
+        <div class="forecast-container d-flex ">
+          <!-- TODAY -->
+          <div class=" today forecast  ">
+            <div class="d-flex today-header justify-content-between">
+              <span id="todayName">Wednesday</span>
+              <div>
+                <span id="todayNumber"> </span>
+              <span id="todayMonth"> </span>
+              </div>
+            </div>
+            <div class="today-data forecast">
+              <div id="todayLocation">cairo</div>
+            <div class="d-flex justify-content-between">
+              
+              <div  id="weatherTemp">
+                  "30"
+              </div>
+              <div  ><img class="w-90" id="todayStatusImage"src="images/113 (1).png" alt=""></div>
+              
+            </div>
+            <div><p class="custom" id="todayStatus">sunny</p></div>
+            <div class="list">
+              <ul class="d-flex p-0">
+                <li class="d-flex pe-3">
+                  <div><img src="images/icon-umberella.png" alt=""></div>
+                  <span  class="ps-2"id="humidity">20%</span>
+                </li>
+                <li class="d-flex pe-3">
+                  <div><img src="images/icon-wind.png" alt=""></div>
+                  <span class="ps-2" id="wind">18km</span>
+                </li>
+                <li class="d-flex pe-3">
+                  <div><img src="images/icon-compass.png" alt=""></div>
+                  <span class="ps-2" id="windDirection">East</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+            </div>
+            <!-- TOMORROW -->
+            <div  class="next-day-data forecast  dark-bg  text-center ">
+              <div class="next-day-header">
+                <span class="nextDayName ">Thursday</span>
+            </div>
+            <div class="next-day-content">
+              <div><img class="nextDayStatusImage" src="images/113 (1).png" alt=""></div>
+            <div class="degree">
+  
+                    <div class=" nextDayMaxTemp">32</div>
+                    <div class=" nextDayMinTemp">22</div>
+                
+            </div>
+            <div class="custom"><p class="nextDayStatus">Cloudy</p></div>
+            </div>
+        </div>
+        <!-- AFTER TOMORROW -->
+            <div  class="next-day-data forecast text-center ">
+              <div class="next-day-header">
+                <span class="nextDayName ">Thursday</span>
+            </div>
+            <div class="next-day-content">
+              <div><img class="nextDayStatusImage" src="images/113 (1).png" alt=""></div>
+            <div class="degree">
+  
+                    <div class=" nextDayMaxTemp">32</div>
+                    <div class=" nextDayMinTemp">22</div>
+                
+            </div>
+            <div class="custom"><p class="nextDayStatus">Cloudy</p></div>
+            </div>
+        </div>
+        </div>
+  
+      
+        </div>
+    </div>
+    <!--  end of forecast table -->
+      <!-- beg of footer section -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <form action="#" class="subscribe-form">
+              <input type="text" placeholder="Enter your email to subscribe...">
+              <input type="submit" value="Subscribe">
+            </form>
+          </div>
+          <div class="col-md-3 col-md-offset-1">
+            <div class="social-links">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+              <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <p class="colophon">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+      </div>
+    </footer>
+    <!-- end of footer section -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
